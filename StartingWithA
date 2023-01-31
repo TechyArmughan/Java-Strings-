@@ -1,0 +1,21 @@
+//To print the number of words starting with A
+import java.util.Scanner;
+public class StartingWithA
+{
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a sentence :");
+        String sen = " " + sc.next();
+        sen = sen.toUpperCase();
+        int i,c=0;
+        for(i = 0;i<sen.length()-1;i++)
+        {
+            if(sen.charAt(i) == ' ' && sen.charAt(i+1) == 'A')
+            {
+                c++;
+            }
+        }
+        System.out.println("The number of words starting with A are : " +c);
+    }
+}
